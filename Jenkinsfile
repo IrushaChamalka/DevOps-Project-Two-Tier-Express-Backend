@@ -6,11 +6,12 @@ pipeline{
     }
 
     stages{
-        stage('Clone repo'){
-            steps{
-                git branch: 'main', url: 'https://github.com/irusha-devops/DevOps-Project-Two-Tier-Express-Backend.git'
-            }  
-        }
+        // stage('Clone repo'){
+        //     steps{
+                
+        //         git branch: 'main', url: 'https://github.com/irusha-devops/DevOps-Project-Two-Tier-Express-Backend.git'
+        //     }  
+        // }
 
         stage('Build Docker Image'){
             steps{
