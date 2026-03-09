@@ -3,6 +3,8 @@ pipeline{
 
     environment{
         IMAGE_NAME = 'express-backend'
+        MONGO_URI = credentials('MONGO_URI')
+        PORT = credentials('PORT')
     }
 
     stages{
