@@ -28,7 +28,7 @@ app.post("/register", async (req, res) => {
     const { name, email, password } = req.body;
     const auth = new Auth({ name, email, password });
     await auth.save();
-    res.status(201).json({ message: "User registered successfully" });
+    res.status(201).json({ message: "New User registered successfully" });
 });
 
 app.post("/login", async (req, res) => {
